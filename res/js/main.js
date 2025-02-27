@@ -18,6 +18,17 @@ class Player {
         if(keys["s"]) this.y += this.v;
         if(keys["a"]) this.x -= this.v;
         if(keys["d"]) this.x += this.v;
+        if(keys[" "]) {
+            this.w --; 
+            this.h --;
+        } 
+        if(keys["Control"]) {
+            this.v = 10;
+        } else {
+            this.v = 5;
+        }
+        
+        
 
     }
 }
